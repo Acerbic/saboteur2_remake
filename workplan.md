@@ -27,7 +27,7 @@ Sample from the top navigation menu:
 The site comprises of several interlinked pages, mostly *HTML + inlined CSS*.
 No JS or external style sheets seen so far. There are numerous illustrations -
 both static images and gifs, as well as inclusion of audio media via embedded
-(\<object\>) *Shockwave Flash* player.
+(<object\>) *Shockwave Flash* player.
 
 The original website seems to be designed with 800px width screen in mind.
 
@@ -37,7 +37,7 @@ The goal of this exercise is to rework presentation of the material into
 modern HTML5 + CSS3 website - no content change, no design change, unless
 trivial and obvious improvement on material layout on my own discretion.
 
-Shockwave Flash is to be abandon in favor of \<audio\>.
+Shockwave Flash is to be abandon in favor of <audio\>.
 
 New website will support wider screens, as well as mobile devices.
 
