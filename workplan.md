@@ -93,6 +93,8 @@ Top level pages are available from navigation menu, shown on every page.
 
 ## Project design decisions ##
 
+### Tech ###
+
 After some consideration I resolved to abstain from using any sort of backend
 framework for this project - like Laravel or Yii. Instead the result will be
 a set of static files - .html, .css, .js - as the project not only
@@ -102,6 +104,13 @@ client alone.
 
 This comes with a downside - URLs in the browser will include visible .html
 extensions (unless I find some rewrite rule to avoid it).
+
+That being said, while the result will be static pages, the development doesn't
+have to. I will use some sort of content generators, perhaps a template
+engine, to avoid page code duplication. Linters, minimizers and other tooling
+will be set up to create robust dev environment and ensure optimal results.
+
+### Content and design ###
 
 Some sub pages will be joined together - music, for example - since they provide
 uniform functionality and I will implement some sort of layout or content
