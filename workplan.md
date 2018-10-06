@@ -48,7 +48,7 @@ graceful downgraded version - no worse than the existing source site.
 ## Site pages structure - normative listing ##
 
 - Main page - http://www.saboteur2.ru/index.html
-  - Game casette loading sounds - http://www.saboteur2.ru/saboteur2_sab2_tape.html
+    - Game casette loading sounds - http://www.saboteur2.ru/saboteur2_sab2_tape.html
 - Missions - http://www.saboteur2.ru/saboteur2_miss.html
 - Enemies - http://www.saboteur2.ru/saboteur2_vragi.html
 - Items - http://www.saboteur2.ru/saboteur2_predm.html
@@ -56,29 +56,29 @@ graceful downgraded version - no worse than the existing source site.
 - Weapons - http://www.saboteur2.ru/saboteur2_weapon.html
 - Map - http://www.saboteur2.ru/saboteur2_map.html
 - Music - http://www.saboteur2.ru/saboteur2_music.html
-  - Originals
-    - IBM PC http://www.saboteur2.ru/saboteur2_mus_pc.html
-    - ZX Spectrum 48K http://www.saboteur2.ru/saboteur2_mus_zx48k_sp.html
-    - ZX Spectrum 128K http://www.saboteur2.ru/saboteur2_mus_zx128k_ay.html
-    - Amstrad CPC http://www.saboteur2.ru/saboteur2_mus_amstrad_cpc.html
-    - Commodore C64 http://www.saboteur2.ru/saboteur2_mus_c64.html
-  - Remixes
-    - Rob Hubbard http://www.saboteur2.ru/saboteur2_mus_rob_hubbard.html
-    - Marcel Donne http://www.saboteur2.ru/saboteur2_mus_marcel_donne.html
-    - Marcel Donne - Revisited http://www.saboteur2.ru/saboteur2_mus_marcel_donne_revisited.html
-    - Saboteur 2 v2009 http://www.saboteur2.ru/saboteur2_mus_v2009.html
-    - Endika Fernandez - techno-mix http://www.saboteur2.ru/saboteur2_mus_endika.html
+    - Originals
+        - IBM PC http://www.saboteur2.ru/saboteur2_mus_pc.html
+        - ZX Spectrum 48K http://www.saboteur2.ru/saboteur2_mus_zx48k_sp.html
+        - ZX Spectrum 128K http://www.saboteur2.ru/saboteur2_mus_zx128k_ay.html
+        - Amstrad CPC http://www.saboteur2.ru/saboteur2_mus_amstrad_cpc.html
+        - Commodore C64 http://www.saboteur2.ru/saboteur2_mus_c64.html
+    - Remixes
+        - Rob Hubbard http://www.saboteur2.ru/saboteur2_mus_rob_hubbard.html
+        - Marcel Donne http://www.saboteur2.ru/saboteur2_mus_marcel_donne.html
+        - Marcel Donne - Revisited http://www.saboteur2.ru/saboteur2_mus_marcel_donne_revisited.html
+        - Saboteur 2 v2009 http://www.saboteur2.ru/saboteur2_mus_v2009.html
+        - Endika Fernandez - techno-mix http://www.saboteur2.ru/saboteur2_mus_endika.html
 - Tactics - http://www.saboteur2.ru/saboteur2_tactic.html
 - Secrets - http://www.saboteur2.ru/saboteur2_secret.html
-  - Level codes - http://www.saboteur2.ru/saboteur2_sec_codes.html
-  - Secret room (immortality) - http://www.saboteur2.ru/saboteur2_sec_room.html
-  - Teleport - http://www.saboteur2.ru/saboteur2_sec_teleport.html
-  - Infinite punch cards box - http://www.saboteur2.ru/saboteur2_sec_infinit_perf.html
-  - Hidden punch card - http://www.saboteur2.ru/saboteur2_sec_hidden_perf.html
-  - Migrating punch card - http://www.saboteur2.ru/saboteur2_sec_migrate_perf.html
-  - Unused punch cards - http://www.saboteur2.ru/saboteur2_sec_neisp_perf.html
-  - Rocket takeoff - http://www.saboteur2.ru/saboteur2_sec_rocket.html
-  - Timer stop - http://www.saboteur2.ru/saboteur2_sec_timer.html
+    - Level codes - http://www.saboteur2.ru/saboteur2_sec_codes.html
+    - Secret room (immortality) - http://www.saboteur2.ru/saboteur2_sec_room.html
+    - Teleport - http://www.saboteur2.ru/saboteur2_sec_teleport.html
+    - Infinite punch cards box - http://www.saboteur2.ru/saboteur2_sec_infinit_perf.html
+    - Hidden punch card - http://www.saboteur2.ru/saboteur2_sec_hidden_perf.html
+    - Migrating punch card - http://www.saboteur2.ru/saboteur2_sec_migrate_perf.html
+    - Unused punch cards - http://www.saboteur2.ru/saboteur2_sec_neisp_perf.html
+    - Rocket takeoff - http://www.saboteur2.ru/saboteur2_sec_rocket.html
+    - Timer stop - http://www.saboteur2.ru/saboteur2_sec_timer.html
 - Facts - http://www.saboteur2.ru/saboteur2_facts.html
 - Fantasies - http://www.saboteur2.ru/saboteur2_fantasy.html
 - Play - http://www.saboteur2.ru/saboteur2_play.html
