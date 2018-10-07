@@ -1,1 +1,31 @@
-@import 'reset.css'
+@import 'reset.css';
+
+body {
+    color: white;
+    background: black;
+    margin: 8px;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    text-align: center;
+}
+
+nav#topnav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav#topnav ul li {
+    padding: 0 1em;
+}
+
+nav a {
+    color: #FFB90F;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}

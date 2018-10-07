@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Главная",
+        "src": "index.twig"
+    },
+    {
+        "name": "Миссии",
+        "src": "saboteur2_miss.twig"
+    }
+]
