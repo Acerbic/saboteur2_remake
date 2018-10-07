@@ -1,0 +1,13 @@
+{# Header section of pages - logo and main navigation #}
+<header>
+    <a href="index.html">
+        <img src="images/banner.png" alt="Saboteur 2 in custom font">
+    </a>
+    <nav id="topnav">
+        <ul>
+            {% for page in top_pages %}
+                <li><a href="{{ page.url|e }}">{{ page.name|e }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
