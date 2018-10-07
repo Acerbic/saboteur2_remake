@@ -145,6 +145,9 @@ as well as to the original website.
 
 4. Dev http server - node http-server, as I don't need SQL / routing
 
+    use the following command to start server on localhost:8000
+    > npm run server
+
 5. JS transpilers - Babel ??? TODO:
 
 6. CSS Linter - ??? TODO:
