@@ -1,4 +1,8 @@
 {# Header section of pages - logo and main navigation #}
+
+{# detect the output file of the context - bit hackish #}
+{% set current_page = _context['_target']['relative'] %}
+
 <header>
     <a href="index.html">
         <img src="images/banner.png" alt="Saboteur 2 in custom font">
@@ -6,7 +10,11 @@
     <nav id="topnav">
         <ul>
             {% for page in top_pages %}
-                <li><a href="{{ page.url|e }}">{{ page.name|e }}</a></li>
+            <li>
+                <a href="{{ page.url|e }}"{% if current_page == page.url %} class="current"{% endif %}>
+                    {{ page.name|e }}
+                </a>
+            </li>
             {% endfor %}
         </ul>
     </nav>
