@@ -4,7 +4,8 @@
   "description": "Remake of a website (saboteur2.ru)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server -a localhost -p 8000 -c-1"
+    "server": "http-server -a localhost -p 8000 -c-1",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/GlebVarenov/saboteur2_remake#readme",
   "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-twig": "^1.2.0",
     "reset-css": "^4.0.1",
     "twig": "^1.12.0"
   },
