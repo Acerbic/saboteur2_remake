@@ -43,7 +43,7 @@ New website will support wider screens, as well as mobile devices.
 
 The remake will be providing full functionality for modern browsers and
 IE, starting from IE9. Earlier browsers down to (inclusive) IE6 will have a
-graceful downgraded version - no worse than the existing source site.
+gracefully downgraded version - no worse than the existing source site.
 
 ## Site pages structure - normative listing ##
 
@@ -96,11 +96,11 @@ Top level pages are available from navigation menu, shown on every page.
 ### Tech ###
 
 After some consideration I resolved to abstain from using any sort of backend
-framework for this project - like Laravel or Yii. Instead the result will be
-a set of static files - .html, .css, .js - as the project not only
-does not require any sort of persistent state storage, but also have no
-interactivity (AJAX, etc.) and no complex logic that could not be made by the
-client alone.
+framework for this project - like Laravel or Yii, React, etc. Instead,
+the result will be a set of static files - .html, .css, .js - as the project
+not only does not require any sort of persistent state storage, but also have
+no interactivity (AJAX, etc.) and no complex logic that could not be made by
+the client alone.
 
 This comes with a downside - URLs in the browser will include visible .html
 extensions (unless I find some rewrite rule to avoid it).
@@ -131,3 +131,37 @@ do so, to comply with usability guidelines.
 There will be a big visible overlay banner, that will clearly state that the
 resulting site is a derivative work and will point to this project's source page,
 as well as to the original website.
+
+## Tools chosen, dev process ##
+
+1. Tasks runner, main build control - gulp (JS).
+
+2. Templating engine - Twig.JS (Twig conversion for JS). This is some
+    risky decision, but I will give it a try, since Twig is very common and
+    I'd rather work with it to keep my skills sharp. And if this won't work out,
+    I will switch to some native JS template engine, like handlebars.
+
+3. CSS minimizers - ??? TODO:
+
+4. Dev http server - node http-server, as I don't need SQL / routing
+
+5. JS transpilers - Babel ??? TODO:
+
+6. CSS Linter - ??? TODO:
+
+7. JS Linter - ??? TODO:
+
+8. Images minimizers - ??? TODO:
+
+9. CSS libs
+
+    9.1. reset.css
+
+10. JS libs - ??? TODO:
+
+## Project structure ##
+
+- {root}        -- package.json, configs, readme, etc.
+    - /public   -- result of build, ready to be served by http server
+    - /source   -- include all the materials, from which contents of
+                   /public will be built

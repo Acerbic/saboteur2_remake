@@ -1,0 +1,23 @@
+{
+  "name": "saboteur2_remake",
+  "version": "1.0.0",
+  "description": "Remake of a website (saboteur2.ru)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/GlebVarenov/saboteur2_remake.git"
+  },
+  "keywords": [
+    "game",
+    "website",
+    "fan",
+    "saboteur",
+    "saboteur2",
+    "remake"
+  ],
+  "author": "Gleb Varenov",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/GlebVarenov/saboteur2_remake#readme"
+}
