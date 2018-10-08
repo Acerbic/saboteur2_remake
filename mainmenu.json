@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Главная",
+        "src": "index.twig"
+    },
+    {
+        "name": "Миссии",
+        "src": "saboteur2_miss.twig"
+    },
+    {
+        "name": "Враги",
+        "src": "saboteur2_vragi.twig"
+    },
+    {
+        "name": "Предметы",
+        "src": "saboteur2_predm.twig"
+    },
+    {
+        "name": "Панель",
+        "src": "saboteur2_panel.twig"
+    },
+    {
+        "name": "Оружие",
+        "src": "saboteur2_weapon.twig"
+    },
+    {
+        "name": "Карта",
+        "src": "saboteur2_map.twig"
+    },
+    {
+        "name": "Музыка",
+        "src": "saboteur2_music.twig"
+    },
+    {
+        "name": "Тактика",
+        "src": "saboteur2_tactic.twig"
+    },
+    {
+        "name": "Секреты",
+        "src": "saboteur2_secret.twig"
+    },
+    {
+        "name": "Факты",
+        "src": "saboteur2_facts.twig"
+    },
+    {
+        "name": "Фантазии",
+        "src": "saboteur2_fantasy.twig"
+    },
+    {
+        "name": "Играть",
+        "src": "saboteur2_play.twig"
+    },
+    {
+        "name": "Релизы",
+        "src": "saboteur2_release.twig"
+    },
+    {
+        "name": "Пресса",
+        "src": "saboteur2_press.twig"
+    },
+    {
+        "name": "История",
+        "src": "saboteur2_history.twig"
+    },
+    {
+        "name": "Контакты",
+        "src": "saboteur2_contacts.twig"
+    }
+]
