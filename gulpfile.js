@@ -28,16 +28,20 @@ gulp.task('watch-pages', function () {
         .pipe(gulp.dest('./public'));
 });
 
-gulp.task('watch-menu', function () {
+gulp.task('watch-twig-extra', function () {
     'use strict';
 
-    return watch('./mainmenu.json', { verbose: true }, gulp.task('compile'));
+    return watch(
+        ['./mainmenu.json', './source/*.twig'],
+        { verbose: true }, 
+        gulp.task('compile')
+    );
 });
 
 
 gulp.task('watch', gulp.parallel(
     'watch-pages',
-    'watch-menu',
+    'watch-twig-extra',
     function watchCss() {
         'use strict';
 
