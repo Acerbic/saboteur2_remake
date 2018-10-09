@@ -1,7 +1,6 @@
 {# Header section of pages - logo and main navigation #}
 
 {# detect the output file of the context - bit hackish #}
-{% set current_page = _context['_target']['relative'] %}
 
 <header>
     <a href="index.html">
@@ -10,11 +9,12 @@
     <nav id="topnav">
         <ul>
             {% for page in top_pages %}
-            <li>
-                <a href="{{ page.url|e }}"{% if current_page == page.url %} class="current"{% endif %}>
-                    {{ page.name|e }}
-                </a>
-            </li>
+                {% set highlight = (_context['_target']['relative'] == page.url) or (page_menu_item == page.url) %}
+                <li>
+                    <a href="{{ page.url|e }}"{% if highlight %} class="current"{% endif %}>
+                        {{ page.name|e }}
+                    </a>
+                </li>
             {% endfor %}
         </ul>
     </nav>
