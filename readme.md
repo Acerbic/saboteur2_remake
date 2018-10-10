@@ -8,4 +8,4 @@ This project is a remake of the website, updating its presentation and layout
 skills as webdev, and partly me paying respects to the game I played so much as
 a child.
 
-See the project live at https://public-qhatsrkbwi.now.sh !
+See the project live at https://saboteur2ru-remake.now.sh !
