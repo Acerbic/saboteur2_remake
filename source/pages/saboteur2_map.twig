@@ -1,14 +1,26 @@
 {% extends '../layout.twig' %}
-{% set title = "Saboteur 2 - все об игре, коды, карты, секреты, прохождения, описания, подсказки" %}
-{% set footer_note = "Saboteur 2 - все об игре - Saboteur II - Avenging Angel - лучшая игра - Saboteur2" %}
+{% set title = "Saboteur 2 - подробная карта здания, map, секреты, прохождение, описания, подробно обо всем" %}
+{# {% set footer_note = "Карты для Saboteur 2. От простой до подробной. Показано все здание!" %} #}
 
 {% block content %}
 <article>
-    <h1>Saboteur 2 - Avenging Angel</h1>
-    <img src="images/sab2_zx1.jpg" alt="Game splash screen">
+    <h1>Карта Saboteur 2</h1>
 
     <p>
-        <a href="saboteur2_contacts.html">КОНТАКТЫ</a>
+        Уменьшенная точная карта здания :
     </p>
+    
+    <img src="images/saboteur2_map_sm640.jpg" alt="">
+    
+    <p>
+        Полноразмерная подробная карта здания :<br>
+        (Используйте скроллинг по экрану для прокрутки и просмотра)
+    </p>
+    
+    <div id="map-container">
+        <img src="images/saboteur2_map.png" alt="">
+    </div>
 </article>
 {% endblock %}
+
+{% block footer %}{% endblock %}

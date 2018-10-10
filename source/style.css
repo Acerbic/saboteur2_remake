@@ -179,6 +179,13 @@ iframe[name=mus_subpage] {
     overflow: hidden;
 }
 
+#map-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: scroll;
+    max-height: 90vh;
+}
+
 /***** subpages ******/
 body.subpage {
     display: block;
