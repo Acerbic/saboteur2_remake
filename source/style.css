@@ -91,7 +91,7 @@ p {
 /********* generic render styles *******/
 /* one centered column of text */
 .mono-column {
-    max-width: 860px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -163,4 +163,44 @@ article#article-history figure {
 article#article-history .image-description {
     font-style: italic;
     font-size: 0.9em;
+}
+
+article#article-music ul.flex-container {
+    justify-content: center;
+    margin-top: 0.5em;
+}
+article#article-music ul.flex-container li {
+    min-width: 8em;
+    padding: 0 1em;
+    margin-bottom: unset;
+}
+iframe[name=mus_subpage] {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/***** subpages ******/
+body.subpage {
+    display: block;
+    text-align: inherit;
+    overflow: hidden;
+}
+body.subpage audio {
+    display: block;
+    margin: 0 auto;
+}
+body.subpage img {
+    display: block;
+    margin: 0 auto;
+    max-height: 476px;
+    max-width: 600px;
+}
+body.subpage img.left {
+    float: left;
+    max-width: 400px;
+    margin-right: 1em;
+}
+div.player {
+    height: 54px;
+    overflow: visible;
 }

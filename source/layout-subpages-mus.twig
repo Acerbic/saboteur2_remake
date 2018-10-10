@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>{{ title }}</title>
+</head>
+
+<body class="subpage">
+    <div class="player">
+        <audio src="audio/{{ audiofile }}" controls>
+            Обновите браузер, или используйте браузер совместимый с HTML5, чтобы прослушать музыку. Либо, вы можете 
+            <a href="audio/{{ audiofile }}">скачать звуковой файл</a> и использовать ваш системный плеер.
+
+            <object type="application/x-shockwave-flash" data="mus/mp3play.swf" height="0" width="0">
+                <param name="wmode" VALUE="transparent" />
+                <param name="allowFullScreen" value="true" />
+                <param name="allowScriptAccess" value="false" />
+                <param name="movie" value="mus/mp3play.swf" />
+                <param name="FlashVars" value="way=mus/{{ audiofile }}&amp;swf=mus/mp3play.swf&amp;w=0&amp;h=0&amp;time_seconds=0&amp;autoplay=1&amp;q=1&amp;skin=black&amp;volume=100&amp;comment=" />
+            </object>
+        </audio>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
