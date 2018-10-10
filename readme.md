@@ -7,3 +7,5 @@ This project is a remake of the website, updating its presentation and layout
 (but not contents) to modern web standards. It is partly an exercise of my
 skills as webdev, and partly me paying respects to the game I played so much as
 a child.
+
+See the project live at https://public-qhatsrkbwi.now.sh !
