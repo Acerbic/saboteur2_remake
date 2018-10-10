@@ -48,5 +48,7 @@
     ✔ - Contacts - http://www.saboteur2.ru/saboteur2_contacts.html @done (10/8/2018, 6:21:23 AM)
 
 ☐ Add disclaimer overlay - link to the original site
+☐ Convert *.mp3 to *.ogg
+☐ Fix images where applicable jpg -> png
 ☐ Test modern version in different browsers
     ☐ Fix inconsistensies between target browsers
