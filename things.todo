@@ -49,6 +49,6 @@
 
 ☐ Add disclaimer overlay - link to the original site
 ☐ Convert *.mp3 to *.ogg
-☐ Fix images where applicable jpg -> png
+✔ Fix images where applicable jpg -> png @done (10/10/2018, 6:20:30 AM)
 ☐ Test modern version in different browsers
     ☐ Fix inconsistensies between target browsers

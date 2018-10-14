@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "http-server -a localhost -p 8000 -c-1",
     "gulp": "gulp",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "build": "gulp",
+    "deploy": "gulp && now ./public -A ../now.json | xargs -I % now alias % saboteur2ru-remake.now.sh"
   },
   "repository": {
     "type": "git",

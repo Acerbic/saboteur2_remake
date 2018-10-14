@@ -8,14 +8,6 @@ body {
     text-align: center;
 
     font-family: Arial, Helvetica, sans-serif;
-    
-    /* document sectioning - top menu, main article, footer */
-    display: flex;
-    flex-direction: column;
-}
-
-header, footer {
-    text-align: center;
 }
 
 article {
