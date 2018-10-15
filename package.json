@@ -1,14 +1,25 @@
 {
   "name": "saboteur2_remake",
   "version": "1.0.0",
-  "description": "Remake of a website (saboteur2.ru)",
+  "description": "Remake of a website (saboteur2.ru) in modern HTML+CSS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "http-server -a localhost -p 8000 -c-1",
     "gulp": "gulp",
     "watch": "gulp watch",
     "build": "gulp",
-    "deploy": "gulp && now ./public -A ../now.json | xargs -I % now alias % saboteur2ru-remake.now.sh"
+    "deploy": "gulp && now | xargs -I % cross-env-shell now alias % $npm_package_now_alias"
+  },
+  "now": {
+    "alias": "saboteur2ru-remake.now.sh",
+    "public": true,
+    "type": "static",
+    "files": [
+      "./public"
+    ],
+    "static": {
+      "public": "public"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,6 +37,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/GlebVarenov/saboteur2_remake#readme",
   "dependencies": {
+    "cross-env": "^5.2.0",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-data": "^1.3.1",
