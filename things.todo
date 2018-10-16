@@ -1,10 +1,10 @@
-☐ Set up dev env
+✔ Set up dev env @done (10/16/2018, 2:36:04 PM)
     ✔ Set up Twig @done (10/7/2018, 5:30:02 AM)
     ✔ Set up Gulp @done (10/7/2018, 5:30:04 AM)
         ✔ ~ compile Twig files @done (10/8/2018, 4:02:04 AM)
         ✔ Add watch to recompile all pages if menu changes @done (10/8/2018, 6:21:15 AM)
 
-☐ Create Web Pages
+✔ Create Web Pages @done (10/16/2018, 2:36:02 PM)
     ✔ Create basic Twig template @done (10/7/2018, 6:20:13 AM)
     ✔ Add Header Block Section @done (10/7/2018, 7:05:05 AM)
     ✔ - Main page - http://www.saboteur2.ru/index.html @done (10/8/2018, 4:35:27 AM)
@@ -41,7 +41,7 @@
         ✔ - Timer stop - http://www.saboteur2.ru/saboteur2_sec_timer.html @done (10/10/2018, 12:47:06 AM)
     ✔ - Facts - http://www.saboteur2.ru/saboteur2_facts.html @done (10/9/2018, 2:41:08 AM)
     ✔ - Fantasies - http://www.saboteur2.ru/saboteur2_fantasy.html @done (10/9/2018, 2:41:09 AM)
-    ☐ - Play - http://www.saboteur2.ru/saboteur2_play.html
+    ✔ - Play - http://www.saboteur2.ru/saboteur2_play.html @done (10/16/2018, 2:35:56 PM)
     ✔ - Releases - http://www.saboteur2.ru/saboteur2_release.html @done (10/9/2018, 2:41:10 AM)
     ✔ - Press - http://www.saboteur2.ru/saboteur2_press.html @done (10/9/2018, 2:41:11 AM)
     ✔ - History - http://www.saboteur2.ru/saboteur2_history.html @done (10/9/2018, 2:41:12 AM)

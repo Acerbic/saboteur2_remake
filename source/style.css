@@ -178,6 +178,14 @@ iframe[name=mus_subpage] {
     max-height: 90vh;
 }
 
+#article-play a {
+	font-size: 1em;
+	text-decoration: underline;
+	font-style: italic;
+	font-family: Arial;
+	color: lightskyblue;
+}
+
 /***** subpages ******/
 body.subpage {
     display: block;
