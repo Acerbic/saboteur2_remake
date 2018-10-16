@@ -213,57 +213,75 @@ div.player {
 }
 
 /***** disclaimer *****/
-div#diclaimer {
-    position: absolute;
+div#disclaimer {
+    position: fixed;
     bottom: 0;
     left: 0;
-    height: 5em;
-    width: 100%;
+    font-size: 5em;
+    height: 1em;
+    width: 0.5em;
     overflow: hidden;
+
+    text-align: left;
 }
 
-div#diclaimer div#corner {
-    position: fixed;
-    height: 5em;
-    width: 5em;
-    border-left: 2.5em solid beige;
-    border-top: 2.5em solid transparent;
-    border-bottom: 2.5em solid transparent;
+div#disclaimer div#corner {
+    height: 1em;
+    width: 0.5em;
+    border-left: 0.5em solid gold;
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
     box-sizing: border-box;
 }
 
-div#diclaimer div#hover-container {
-    text-align: left;
-    height: 5em;
-}
-
-div#diclaimer div#trap div#anchor {
-    position: absolute;
+div#disclaimer div#anchor {
     font-weight: bold;
     color: red;
-    font-size: 2.5em;
     line-height: 2em;
+    padding-left: 0.1em;
+    font-size: 0.5em;
+
+    /* putting this over #corner */
+    position: relative;
+    top: -2em;
 }
 
-div#diclaimer div#trap div#popup {
+div#disclaimer div#popup {
+    visibility: hidden;
+
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    visibility: hidden;
+    min-height: 1em;
 
-    font-size: 2.5em;
-    height: 2em;
-    line-height: 1.7em;
-    margin-left: 1em;
+    margin-left: 0.5em;
 
-    color: red;
-
-    box-sizing: border-box;
-    border-radius: 0.2em;
-    border: 0.2em solid yellow;
+    display: flex;
+    align-items: center;
+    background-color: rgba(36, 112, 141, 0.9);
 }
 
-div#diclaimer div#trap:hover div#popup {
+div#disclaimer:hover div#popup {
     visibility: visible;
+}
+
+div#disclaimer:hover div#corner {
+    background-color: rgba(36, 112, 141, 0.9);
+}
+
+div#disclaimer-message {
+    font-size: 0.2em;
+    line-height: 1.5em;
+
+    padding: 1em;
+
+    color: gold;
+    text-shadow: 1px 2px gray;
+}
+
+div#disclaimer-message a {
+    text-shadow: none;
+    color: navy;
+    font-style: italic;
 }
