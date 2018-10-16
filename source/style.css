@@ -211,3 +211,52 @@ div.player {
     height: 54px;
     overflow: visible;
 }
+
+/***** disclaimer *****/
+div#diclaimer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5em;
+    width: 100%;
+    overflow: hidden;
+}
+
+div#diclaimer div#corner {
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    border-left: 2.5em solid beige;
+    border-top: 2.5em solid transparent;
+    border-bottom: 2.5em solid transparent;
+    box-sizing: border-box;
+}
+
+div#diclaimer div#hover-container {
+    position: absolute;
+    text-align: left;
+    /* width: 100%; */
+    height: 5em;
+}
+
+div#diclaimer div#trap {
+    font-weight: bold;
+    color: red;
+    font-size: 2.5em;
+    line-height: 2em;
+    /* padding-left: 0.3em; */
+}
+
+div#diclaimer div#trap div#anchor {
+    position: absolute;
+}
+
+div#diclaimer div#trap div#popup {
+    visibility: hidden;
+    float: left;
+    width: 100%;
+}
+
+div#diclaimer div#trap:hover div#popup {
+    visibility: visible;
+}
