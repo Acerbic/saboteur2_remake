@@ -3,6 +3,7 @@
     ✔ Set up Gulp @done (10/7/2018, 5:30:04 AM)
         ✔ ~ compile Twig files @done (10/8/2018, 4:02:04 AM)
         ✔ Add watch to recompile all pages if menu changes @done (10/8/2018, 6:21:15 AM)
+        ☐ Add CSS processing
 
 ✔ Create Web Pages @done (10/16/2018, 2:36:02 PM)
     ✔ Create basic Twig template @done (10/7/2018, 6:20:13 AM)
