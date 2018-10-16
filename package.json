@@ -8,18 +8,17 @@
     "gulp": "gulp",
     "watch": "gulp watch",
     "build": "gulp",
-    "deploy": "gulp && now | xargs -I % cross-env-shell now alias % $npm_package_now_alias"
+    "_now_oss": "npm run build && rm ./public/audio/sab2_endika.mp3 && echo Build finished. Ready to deploy...",
+    "deploy": "npm run _now_oss && now -d | xargs -I % cross-env-shell now alias % $npm_package_now_alias"
   },
   "now": {
     "alias": "saboteur2ru-remake.now.sh",
     "public": true,
     "type": "static",
-    "files": [
-      "./public"
-    ],
     "static": {
       "public": "public"
-    }
+    },
+    "files": [ "./public" ]
   },
   "repository": {
     "type": "git",
