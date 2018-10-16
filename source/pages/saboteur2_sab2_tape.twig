@@ -7,17 +7,21 @@
     <article id="article-facts" class="mono-column">
         <h1>Звук загрузки Saboteur 2 с кассеты!</h1>
 
-        <audio src="audio/sab2_tape.mp3" controls="controls">
-            Обновите браузер, или используйте браузер совместимый с HTML5, чтобы прослушать музыку. Либо, вы можете
-            <a href="audio/sab2_tape.mp3">скачать звуковой файл</a>
-            и использовать ваш системный плеер.
+        <audio controls="controls">
+            <source src="audio/sab2_tape.ogg" type="audio/ogg">
+            <source src="audio/sab2_tape.mp3" type="audio/mp3">
+            <p>
+                Обновите браузер, или используйте браузер совместимый с HTML5, чтобы прослушать музыку. Также вы можете
+                скачать звуковой файл <a href="audio/sab2_tape.ogg">OGG</a> либо <a href="audio/sab2_tape.mp3">MP3</a>
+                и использовать ваш системный плеер.
+            </p>
 
-            <object type="application/x-shockwave-flash" data="mus/mp3play.swf" height="0" width="0">
+            <object type="application/x-shockwave-flash" data="audio/mp3play.swf" height="0" width="0">
                 <param name="wmode" value="transparent"/>
                 <param name="allowFullScreen" value="true"/>
                 <param name="allowScriptAccess" value="false"/>
-                <param name="movie" value="mus/mp3play.swf"/>
-                <param name="FlashVars" value="way=mus/sab2_tape.mp3&amp;swf=mus/mp3play.swf&amp;w=0&amp;h=0&amp;time_seconds=0&amp;autoplay=1&amp;q=1&amp;skin=black&amp;volume=70&amp;comment="/>
+                <param name="movie" value="audio/mp3play.swf"/>
+                <param name="FlashVars" value="way=audio/sab2_tape.mp3&amp;swf=audio/mp3play.swf&amp;w=0&amp;h=0&amp;time_seconds=0&amp;autoplay=1&amp;q=1&amp;skin=black&amp;volume=100&amp;comment="/>
             </object>
         </audio>
 
