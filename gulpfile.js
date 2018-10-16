@@ -21,7 +21,7 @@ function getMenuData() {
 gulp.task('watch-pages', function () {
     'use strict';
 
-    // Endless stream mode
+    // Endless stream mode (recompile individual pages)
     return watch('./source/pages/*.twig', { ignoreInitial: false, verbose: true })
         .pipe(data(getMenuData))
         .pipe(twig())
@@ -62,11 +62,11 @@ gulp.task('compile', function () {
         .pipe(gulp.dest('./public'));
 });
 
-gulp.task('copy-images', function() {
+gulp.task('copy', function() {
     'use strict';
 
-    return gulp.src('./source/images/*')
-        .pipe(gulp.dest('./public/images'))
+    return gulp.src(['./source/images/**/*', './source/audio/**/*'], {base: './source'})
+        .pipe(gulp.dest('./public'))
 });
 
 gulp.task('process-css', function () {
@@ -76,4 +76,4 @@ gulp.task('process-css', function () {
         .pipe(gulp.dest('./public'))
 })
 
-gulp.task('default', gulp.parallel('compile', 'copy-images', 'process-css'));
+gulp.task('default', gulp.parallel('compile', 'copy', 'process-css'));
