@@ -14,8 +14,28 @@ article {
     margin-bottom: 3em;
 }
 
-header img {
+/**** header - logo and nav *****/
+header {
+    overflow: hidden;
+}
+
+header a#header-logo {
+    display: block;
+    position: relative;
+    left: 50%;
+}
+
+header a#header-logo img {
     padding-bottom: 15px;
+
+    /* this results in parent's width, but clamped between 400 and 640 */
+    width: 100%; 
+    max-width: 640px;
+    min-width: 400px; /* overflow starts below this */
+
+    /* center the overflow, since the 100% is in reference to actual 
+    width - i.e. after clamping by min-width and max-width */
+    margin-left: -100%;
 }
 
 nav#topnav ul {
@@ -266,10 +286,6 @@ div#disclaimer div#popup {
 
 div#disclaimer:hover div#popup {
     visibility: visible;
-}
-
-div#disclaimer:hover div#corner {
-    /* background-color: rgba(36, 112, 141, 0.9); */
 }
 
 div#disclaimer-message {
