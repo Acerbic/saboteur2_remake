@@ -87,6 +87,7 @@ gulp.task('copy', function() {
             ['./source/images/**/*', './source/audio/**/*'],
             {base: './source'}
         )
+        .pipe(gulp.src('./source/images/favicon.ico'))
         .pipe(gulp.dest('./public'))
 });
 
