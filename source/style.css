@@ -232,6 +232,7 @@ div#disclaimer div#corner {
     border-top: 0.5em solid transparent;
     border-bottom: 0.5em solid transparent;
     box-sizing: border-box;
+    position: relative; /* makes z-index applicable to this */
 }
 
 div#disclaimer div#anchor {
@@ -253,9 +254,10 @@ div#disclaimer div#popup {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 0; /* put this under #corner */
     min-height: 1em;
 
-    margin-left: 0.5em;
+    padding-left: 0.5em; /* give space to #corner */
 
     display: flex;
     align-items: center;
@@ -267,7 +269,7 @@ div#disclaimer:hover div#popup {
 }
 
 div#disclaimer:hover div#corner {
-    background-color: rgba(36, 112, 141, 0.9);
+    /* background-color: rgba(36, 112, 141, 0.9); */
 }
 
 div#disclaimer-message {

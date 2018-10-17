@@ -53,3 +53,5 @@
 ✔ Fix images where applicable jpg -> png @done (10/10/2018, 6:20:30 AM)
 ☐ Test modern version in different browsers
     ☐ Fix inconsistensies between target browsers
+    ☐ Logo image in header - causes scroll bars on smaller screen widths (background-url? scaling?)
+    ☐ Is disclaimer accessible to blind ppl?
