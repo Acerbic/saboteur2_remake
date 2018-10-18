@@ -58,3 +58,10 @@
 
 ☐ Fix CSS processing to inline @imports
 ☐ On deployment to now, make sure cache-control max-age is served as well
+☐ @media queries
+    ☐ disclaimer size - avoid blocking all space
+    ☐ menu items  -  switch spacing to min-width to force columns
+    ☐ saboteur2_weapon - set fixed width of weapon items - 25%, 33% to make neat columns
+    ☐ article#article-secrets li - make menu look sensible
+
+☐ Different pixel sizes for images on Press page;

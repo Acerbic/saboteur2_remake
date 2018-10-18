@@ -93,10 +93,23 @@ h3 {
     margin-top: 2.3em;
 }
 
+img {
+    /* black magickz to make image scale down when screen width is less than
+       image's width */
+    max-width: 100%;
+    height: auto;
+}
+
 img.bordered {
     border: solid 0.1111em; /* 2px */
     border-color: inherit;
 }
+
+img.bordered {
+    /* -2px compensate for border offset when downscaling*/
+    margin-left: -0.1111em; 
+}
+
 
 p {
     margin-top: 1.25em;
@@ -134,33 +147,12 @@ article#article-missions section figcaption {
     margin-bottom: 4.6em; /* gap? */
 }
 
-article#article-missions section img {
-    max-width: 547px; /* source images size */
-    width: 100%; /* only scales DOWN from 547px */
-}
-
 /********************************* */
-
 ul#cameras-list li {
     margin-bottom: 4em;
 }
 
-ul#cameras-list img.room {
-    max-width: 100%;
-    height: auto;
-}
-
-ul#cameras-list img.room.bordered {
-    margin-left: -2px; /* compensate for border offset when downscaling */
-}
-
-section#fence img {
-    max-width: 100%;
-    height: auto;
-}
-
 /********************************** */
-
 section#panel-messages {
     margin-top: 2em;
 }
@@ -178,12 +170,27 @@ section#panel-messages li {
     margin-bottom: 2em;
 }
 
+/********************************* */
 div#weapons figure {
     min-width: 25%;
 }
 
+/********************************* */
+#map-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: scroll;
+    max-height: 90vh;
+}
+
+#map-container img {
+    max-width: unset; /* restore the fat map in all its gOry */
+}
+
+/******************************** */
 article#article-secrets li {
-    min-width: 490px;
+    min-width: 20%;
+    margin: 0 0.5em 2em;
 }
 
 article#article-press section figure {
@@ -216,14 +223,10 @@ article#article-music ul.flex-container li {
 iframe[name=mus_subpage] {
     margin: 0 auto;
     overflow: hidden;
+    max-width: 100%; /* keep within screen */
 }
 
-#map-container {
-    width: 90%;
-    margin: 0 auto;
-    overflow: scroll;
-    max-height: 90vh;
-}
+
 
 #article-play a {
 	font-size: 1em;
@@ -236,7 +239,7 @@ iframe[name=mus_subpage] {
 /***** subpages ******/
 body.subpage {
     display: block;
-    text-align: inherit;
+    text-align: left;
     overflow: hidden;
 }
 body.subpage audio {
@@ -246,19 +249,25 @@ body.subpage audio {
 body.subpage img {
     display: block;
     margin: 0 auto;
-    max-height: 476px;
-    max-width: 600px;
+    /* max-height: 476px; */
+    /* max-width: 600px; */
 }
 body.subpage img.left {
     float: left;
-    max-width: 400px;
+    /* max-width: 400px; */
+    max-width: 50%;
     margin-right: 1em;
-    height: auto;
+    /* height: auto; */
 }
 div.player {
     height: 54px;
     overflow: visible;
+    margin-bottom: 0.5em;
 }
+body.subpage p.center {
+    text-align: center;
+}
+
 
 /***** disclaimer *****/
 div#disclaimer {
