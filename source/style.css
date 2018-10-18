@@ -4,7 +4,8 @@ body {
     color: white;
     background: black;
     margin: 8px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.125em; /* 18px */
     text-align: center;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +27,7 @@ header a#header-logo {
 }
 
 header a#header-logo img {
-    padding-bottom: 15px;
+    padding-bottom: 0.833em;
 
     /* this results in parent's width, but clamped between 400 and 640 */
     width: 100%; 
@@ -38,13 +39,13 @@ header a#header-logo img {
     margin-left: -100%;
 }
 
-nav#topnav ul {
+nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-nav#topnav ul li {
+nav ul li {
     padding: 0 1em;
 }
 
@@ -54,9 +55,12 @@ nav a {
     text-decoration: none;
 }
 
+/* highlight current page */
 nav a.current {
     color: #FF4500;
 }
+
+/* *************************************** */
 
 a.footer {
     color: red;
@@ -120,7 +124,7 @@ p {
 .flex-container > figure,
 .flex-container > li
 {
-    max-width: 550px;
+    max-width: 547px; /* defaults to images on missions pages - bc why not? */
     margin-bottom: 2em;
 }
 
@@ -130,9 +134,32 @@ article#article-missions section figcaption {
     margin-bottom: 4.6em; /* gap? */
 }
 
+article#article-missions section img {
+    max-width: 547px; /* source images size */
+    width: 100%; /* only scales DOWN from 547px */
+}
+
+/********************************* */
+
 ul#cameras-list li {
     margin-bottom: 4em;
 }
+
+ul#cameras-list img.room {
+    max-width: 100%;
+    height: auto;
+}
+
+ul#cameras-list img.room.bordered {
+    margin-left: -2px; /* compensate for border offset when downscaling */
+}
+
+section#fence img {
+    max-width: 100%;
+    height: auto;
+}
+
+/********************************** */
 
 section#panel-messages {
     margin-top: 2em;
@@ -226,6 +253,7 @@ body.subpage img.left {
     float: left;
     max-width: 400px;
     margin-right: 1em;
+    height: auto;
 }
 div.player {
     height: 54px;

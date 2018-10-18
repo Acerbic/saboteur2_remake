@@ -6,7 +6,7 @@
     <a href="index.html" id="header-logo">
         <img src="images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125">
     </a>
-    <nav id="topnav">
+    <nav>
         <ul>
             {% for page in top_pages %}
                 {% set highlight = (_context['_target']['relative'] == page.url) or (page_menu_item == page.url) %}
