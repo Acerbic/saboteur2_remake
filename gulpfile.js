@@ -1,8 +1,10 @@
-var gulp = require('gulp');
-var watch = require('gulp-watch');
-var twig = require('gulp-twig');
-var data = require('gulp-data');
-var fs = require('fs');
+const gulp = require('gulp');
+const watch = require('gulp-watch');
+const twig = require('gulp-twig');
+const data = require('gulp-data');
+const fs = require('fs');
+const htmlmin = require('gulp-htmlmin');
+const cleanCSS = require('gulp-clean-css');
 
 /**
  * Load and prepare main nav menu data
@@ -10,7 +12,7 @@ var fs = require('fs');
 function getMenuData() {
     'use strict';
 
-    var menu_data = JSON.parse(fs.readFileSync('./mainmenu.json'))
+    const menu_data = JSON.parse(fs.readFileSync('./mainmenu.json'))
                         .map(entry => ({
                             name: entry.name,
                             url: entry.src.replace(/\.twig$/, '.html')
@@ -29,6 +31,7 @@ gulp.task('watch-pages', function () {
     return watch('./source/pages/*.twig', { ignoreInitial: false, verbose: true })
         .pipe(data(getMenuData))
         .pipe(twig())
+        .pipe(htmlmin({ collapseWhitespace: true, removeComments: true /* dev/prod ? */ }))
         .pipe(gulp.dest('./public'));
 });
 
@@ -74,6 +77,7 @@ gulp.task('compile', function () {
     return gulp.src('./source/pages/*.twig')
         .pipe(data(getMenuData))
         .pipe(twig())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./public'));
 });
 
@@ -98,6 +102,7 @@ gulp.task('process-css', function () {
     'use strict';
 
     return gulp.src(['./source/style.css', './node_modules/reset-css/reset.css'])
+        .pipe(cleanCSS({compatibility: 'ie9', inline: false}))
         .pipe(gulp.dest('./public'))
 })
 
