@@ -11,10 +11,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-article {
-    margin-bottom: 3em;
-}
-
 /**** header - logo and nav *****/
 header {
     overflow: hidden;
@@ -30,11 +26,11 @@ header a#header-logo img {
     padding-bottom: 0.833em;
 
     /* this results in parent's width, but clamped between 400 and 640 */
-    width: 100%; 
+    width: 100%;
     max-width: 640px;
     min-width: 400px; /* overflow starts below this */
 
-    /* center the overflow, since the 100% is in reference to actual 
+    /* center the overflow, since the 100% is in reference to actual
     width - i.e. after clamping by min-width and max-width */
     margin-left: -100%;
 }
@@ -51,7 +47,7 @@ nav ul li {
 
 nav a {
     color: #FFB90F;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
 }
 
@@ -72,12 +68,12 @@ article a {
     text-decoration: none;
     font-size: 1.36em;
     color: #FF4500;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
     color: #FDD017;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.85em;
     margin: 0.7em 0 1.4em;
 }
@@ -107,7 +103,7 @@ img.bordered {
 
 img.bordered {
     /* -2px compensate for border offset when downscaling*/
-    margin-left: -0.1111em; 
+    margin-left: -0.1111em;
 }
 
 
@@ -144,7 +140,10 @@ p {
 /****** contents of individual pages (tweaks) ********/
 article#article-missions section figcaption {
     margin-top: 1.35em;
-    margin-bottom: 4.6em; /* gap? */
+}
+
+article#article-missions .flex-container > figure {
+    margin-bottom: 4.6em;
 }
 
 /********************************* */
@@ -339,4 +338,75 @@ div#disclaimer-message a {
     text-shadow: none;
     color: navy;
     font-style: italic;
+}
+
+/* iPhone 6-8 Plus */
+@media (max-width: 414px) {
+    /****** navigation ****** */
+    header a#header-logo img { padding: 0; }
+    /* pronounce it */
+    nav ul li:first-child { min-width: 100%; margin: 0; }
+    /* spacing */
+    nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; }
+
+    /*** page: weapons ****/
+    div#weapons figure { min-width: 50%; }
+
+    /*** page: music ****/
+    iframe[name=mus_subpage] { height: 700px; }
+
+    body.subpage img.left {
+        margin: 0 auto;
+        display: block;
+        float: none;
+        max-width: 100%;
+        width: auto;
+        max-height: 400px;
+    }
+}
+
+/* iPhone 6-8 */
+@media (max-width: 375px) {
+
+    /*** page: weapons ****/
+    article { overflow: hidden; }
+    div#moves { width: 345px; }
+
+    /*** page: music ****/
+    article#article-music ul.flex-container li { 
+        min-width: 30%; 
+        margin-bottom: 0.25em;
+    }
+}
+
+@media (max-width: 320px), (max-height: 320px) {
+    /* scaling for hand held */
+    body { font-size: 0.9em; }
+    /* banner */
+    header a#header-logo img {
+        padding: 0;
+        min-width: unset;
+        max-height: 5em;
+        width: auto;
+    }
+}
+
+/* iPhone 5 */
+@media (max-width: 320px) {
+
+    /****** navigation ****** */
+    /* banner */
+    header a#header-logo img { /*padding: 0;*/ min-width: unset; }
+    /* pronounce it */
+    nav ul li:first-child { min-width: 100%; margin: 0; }
+    /* spacing */
+    nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; }
+
+    /*** page: weapons ****/
+    div#weapons figure { min-width: 50%; }
+    div#moves { margin-left: -20px; }
+
+    /*** page: music ****/
+    article#article-music ul.flex-container li { margin-bottom: 0.5em; }
+    iframe[name=mus_subpage] { height: 650px; }
 }
