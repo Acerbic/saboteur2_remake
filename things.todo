@@ -57,7 +57,7 @@
     ☐ Is disclaimer accessible to blind ppl?
 
 ☐ Fix CSS processing to inline @imports
-☐ On deployment to now, make sure cache-control max-age is served as well
+✔ On deployment to now, make sure cache-control max-age is served as well @done (10/21/2018, 10:59:35 AM)
 ☐ @media queries
     ✔ disclaimer size - avoid blocking all space @done (10/19/2018, 1:16:49 PM)
     ✔ menu items  -  switch spacing to min-width to force columns @done (10/19/2018, 1:16:51 PM)

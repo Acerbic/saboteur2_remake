@@ -16,7 +16,22 @@
     "public": true,
     "type": "static",
     "static": {
-      "public": "public"
+      "public": "public",
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|mp3|ogg)",
+          "headers": [{
+            "key": "Cache-Control",
+            "value": "max-age=86400"
+          }]
+        }, {
+          "source": "404.html",
+          "headers": [{
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }]
+        }
+      ]
     },
     "files": [
       "./public"
