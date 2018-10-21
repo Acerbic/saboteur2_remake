@@ -21,7 +21,7 @@ function getMenuData() {
 }
 
 /**
- * Watch individual pages and recompile as needed (only the changed page is 
+ * Watch individual pages and recompile as needed (only the changed page is
  * recompiled)
  */
 gulp.task('watch-pages', function () {
@@ -44,7 +44,7 @@ gulp.task('watch-twig-extra', function () {
 
     return watch(
         ['./mainmenu.json', './source/*.twig'],
-        { verbose: true }, 
+        { verbose: true },
         gulp.task('compile')
     );
 });
@@ -101,8 +101,8 @@ gulp.task('copy', function() {
 gulp.task('process-css', function () {
     'use strict';
 
-    return gulp.src(['./source/style.css', './node_modules/reset-css/reset.css'])
-        .pipe(cleanCSS({compatibility: 'ie9', inline: false}))
+    return gulp.src(['./source/style.css'])
+        .pipe(cleanCSS({compatibility: 'ie9'}))
         .pipe(gulp.dest('./public'))
 })
 

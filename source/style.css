@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import '../node_modules/reset-css/reset.css';
 
 body {
     color: white;
@@ -373,8 +373,8 @@ div#disclaimer-message a {
     div#moves { width: 345px; }
 
     /*** page: music ****/
-    article#article-music ul.flex-container li { 
-        min-width: 30%; 
+    article#article-music ul.flex-container li {
+        min-width: 30%;
         margin-bottom: 0.25em;
     }
 }

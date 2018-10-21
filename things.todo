@@ -3,7 +3,7 @@
     ✔ Logo image in header - causes scroll bars on smaller screen widths (background-url? scaling?) @done (10/17/2018, 12:18:05 PM)
     ☐ Is disclaimer accessible to blind ppl?
 
-☐ Fix CSS processing to inline @imports
+✔ Fix CSS processing to inline @imports @done (10/21/2018, 6:20:48 PM)
 ✔ On deployment to now, make sure cache-control max-age is served as well @done (10/21/2018, 10:59:35 AM)
 ☐ @media queries
     ✔ disclaimer size - avoid blocking all space @done (10/19/2018, 1:16:49 PM)
