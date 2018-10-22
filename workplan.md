@@ -141,21 +141,15 @@ as well as to the original website.
     I'd rather work with it to keep my skills sharp. And if this won't work out,
     I will switch to some native JS template engine, like handlebars.
 
-3. CSS minimizers - ??? TODO:
+3. CSS minimizers - Clean CSS
 
 4. Dev http server - node http-server, as I don't need SQL / routing
 
     use the following command to start server on localhost:8000
     > npm run server
 
-5. JS transpilers - n/a
-
-6. CSS Linter - ??? TODO:
-
-7. JS Linter - n/a
-
 8. Images minimizers - since no backend and no dynamic content, I decided to
-    avoid any code/scripted image processing and instead prepare all assets myself.
+    avoid any code/scripted image processing and instead prepare all assets myself. Instead tinypng.com services are used.
 
 9. CSS libs
 

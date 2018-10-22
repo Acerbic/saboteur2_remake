@@ -11,7 +11,7 @@
         />
     </a>
     <nav>
-        <ul>
+        <ul id="navigation">
             {% for page in top_pages %}
                 {% set highlight = (_context['_target']['relative'] == page.url) or (page_menu_item == page.url) %}
                 <li>

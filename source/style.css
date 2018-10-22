@@ -16,13 +16,13 @@ header {
     overflow: hidden;
 }
 
-header a#header-logo {
+a#header-logo {
     display: block;
     position: relative;
     left: 50%;
 }
 
-header a#header-logo img {
+a#header-logo img {
     padding-bottom: 0.833em;
 
     /* this results in parent's width, but clamped between 400 and 640 */
@@ -35,24 +35,24 @@ header a#header-logo img {
     margin-left: -100%;
 }
 
-nav ul {
+ul#navigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-nav ul li {
+ul#navigation li {
     padding: 0 1em;
 }
 
-nav a {
+ul#navigation a {
     color: #FFB90F;
     font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
 }
 
 /* highlight current page */
-nav a.current {
+ul#navigation a.current {
     color: #FF4500;
 }
 
@@ -172,6 +172,7 @@ section#panel-messages li {
 /********************************* */
 div#weapons figure {
     min-width: 25%;
+    margin: 1em 0;
 }
 
 /********************************* */
@@ -183,7 +184,8 @@ div#weapons figure {
 }
 
 #map-container img {
-    max-width: unset; /* restore the fat map in all its gOry */
+    /* restore the fat map in all its gOry */
+    max-width: none;
 }
 
 /******************************** */
@@ -325,6 +327,7 @@ div#disclaimer:hover div#popup {
 }
 
 div#disclaimer-message {
+    width: 100%;
     font-size: 0.2em;
     line-height: 1.5em;
 

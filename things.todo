@@ -12,3 +12,7 @@
     ☐ article#article-secrets li - make menu look sensible
 
 ☐ Different pixel sizes for images on Press page -- some other way to display this page on small devices??
+
+☐ add robots.txt
+
+☐ add "modernizr" to use with versions prior to IE9.

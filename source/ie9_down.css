@@ -1,0 +1,27 @@
+ul#navigation li {
+    display: inline-block;
+}
+
+/* undo the shit magix */
+header a#header-logo {
+    position: static;
+}
+header a#header-logo img {
+    margin-left: 0;
+    min-width: unset;
+}
+
+.flex-container > figure,
+.flex-container > li {
+    display: inline-block;
+    margin: 1em;
+    vertical-align: top;
+}
+
+article#article-secrets li {
+    margin: 1em auto;
+}
+
+div#disclaimer-message {
+    width: 95%;
+}

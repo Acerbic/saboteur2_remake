@@ -101,7 +101,7 @@ gulp.task('copy', function() {
 gulp.task('process-css', function () {
     'use strict';
 
-    return gulp.src(['./source/style.css'])
+    return gulp.src(['./source/style.css', './source/ie9_down.css'])
         .pipe(cleanCSS({compatibility: 'ie9'}))
         .pipe(gulp.dest('./public'))
 })
