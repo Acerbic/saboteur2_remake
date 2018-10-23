@@ -62,9 +62,10 @@ a.footer {
     color: red;
     text-decoration: none;
     font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-article a {
+a {
     text-decoration: none;
     font-size: 1.36em;
     color: #FF4500;
@@ -227,14 +228,12 @@ iframe[name=mus_subpage] {
     max-width: 100%; /* keep within screen */
 }
 
-
-
 #article-play a {
-	font-size: 1em;
-	text-decoration: underline;
-	font-style: italic;
-	font-family: Arial;
-	color: lightskyblue;
+    font-size: 1em;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Arial;
+    color: lightskyblue;
 }
 
 /***** subpages ******/
@@ -250,15 +249,11 @@ body.subpage audio {
 body.subpage img {
     display: block;
     margin: 0 auto;
-    /* max-height: 476px; */
-    /* max-width: 600px; */
 }
 body.subpage img.left {
     float: left;
-    /* max-width: 400px; */
     max-width: 50%;
     margin-right: 1em;
-    /* height: auto; */
 }
 div.player {
     height: 54px;
@@ -268,7 +263,14 @@ div.player {
 body.subpage p.center {
     text-align: center;
 }
-
+p.update-warning {
+    padding: 10px;
+    margin: 0;
+    background: rgb(38, 59, 59);
+}
+p.update-warning a {
+    color: chocolate;
+}
 
 /***** disclaimer *****/
 div#disclaimer {
@@ -340,7 +342,10 @@ div#disclaimer-message {
 div#disclaimer-message a {
     text-shadow: none;
     color: navy;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 /* iPhone 6-8 Plus */

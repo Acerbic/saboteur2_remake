@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!--[if IE 8 ]> <html class="no-js ie8 ie8down"> <![endif]-->
+<!--[if IE 7 ]> <html class="no-js ie7 ie7down"> <![endif]-->
+<!--[if IE 6 ]> <html class="no-js ie6 ie6down"> <![endif]-->
+<html lang="ru" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 <!--[if lte IE 9]>
-	<link rel="stylesheet" type="text/css" href="ie9_down.css" />
+    <link rel="stylesheet" type="text/css" href="ie9_down.css" />
+<![endif]-->
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="modernizr-custom.js"></script>
 <![endif]-->
     <title>{{ title }}</title>
     <meta name="description" content="{{ meta_descr }}" >
@@ -28,5 +34,9 @@
     {% endblock %}
 
     {% include 'disclaimer.twig' %}
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="fixes.js"></script>
+<![endif]-->
+
 </body>
 </html>

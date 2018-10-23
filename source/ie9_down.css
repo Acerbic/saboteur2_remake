@@ -1,6 +1,4 @@
-ul#navigation li {
-    display: inline-block;
-}
+ul#navigation li {display: inline-block;}
 
 /* undo the shit magix */
 header a#header-logo {
@@ -19,9 +17,36 @@ header a#header-logo img {
 }
 
 article#article-secrets li {
-    margin: 1em auto;
+    margin: 1em;
 }
 
 div#disclaimer-message {
     width: 95%;
 }
+
+.ie8 header a#header-logo img {
+    max-height: 125px;
+    min-height: 78px;
+}
+
+.ie8down div#disclaimer div#popup {
+    background: #24708D;
+    opacity: .9; /* other browsers  and IE9+ */
+    filter: alpha(opacity=90); /* IE6+ */
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90); /* IE6+ */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)";
+}
+
+body.subpage img.left {
+    width: 50%;
+}
+
+.ie8down body.subpage .player {
+    height: auto;
+    margin: 0;
+}
+
+ul#navigation { 
+    /* word-wrap: break-word; */
+}
+/* ul#navigation li {display: inline;} */

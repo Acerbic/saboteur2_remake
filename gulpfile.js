@@ -64,8 +64,15 @@ gulp.task('watch', gulp.parallel(
             { ignoreInitial: false, verbose: true },
             gulp.task('process-css')
         );
-    })
-);
+    },
+    function watchJs() {
+        'use strict';
+
+        return watch('./source/*.js', { ignoreInitial: false, verbose: true })
+            .pipe(gulp.dest('./public'));
+    }
+));
+
 
 /**
  * Compile all *.twig page templates into *.html files
@@ -92,6 +99,7 @@ gulp.task('copy', function() {
             {base: './source'}
         )
         .pipe(gulp.src('./source/images/favicon.ico'))
+        .pipe(gulp.src('./source/*.js'))
         .pipe(gulp.dest('./public'))
 });
 
