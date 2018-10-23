@@ -5,6 +5,7 @@ const data = require('gulp-data');
 const fs = require('fs');
 const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 
 /**
  * Load and prepare main nav menu data
@@ -110,6 +111,10 @@ gulp.task('process-css', function () {
     'use strict';
 
     return gulp.src(['./source/style.css', './source/ie9_down.css'])
+        .pipe(autoprefixer({
+            // browsers: ['> 5%'],
+            cascade: false
+        }))
         .pipe(cleanCSS({compatibility: 'ie9'}))
         .pipe(gulp.dest('./public'))
 })

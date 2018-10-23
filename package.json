@@ -20,22 +20,30 @@
       "headers": [
         {
           "source": "**/*.@(jpg|jpeg|gif|png|mp3|ogg)",
-          "headers": [{
-            "key": "Cache-Control",
-            "value": "max-age=86400"
-          }]
-        }, {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=86400"
+            }
+          ]
+        },
+        {
           "source": "**/*.@(html|css)",
-          "headers": [{
-            "key": "Cache-Control",
-            "value": "max-age=7200"
-          }]
-        }, {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=7200"
+            }
+          ]
+        },
+        {
           "source": "404.html",
-          "headers": [{
-            "key": "Cache-Control",
-            "value": "max-age=300"
-          }]
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=300"
+            }
+          ]
         }
       ]
     },
@@ -61,6 +69,7 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-data": "^1.3.1",
     "gulp-htmlmin": "^5.0.1",
