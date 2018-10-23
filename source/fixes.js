@@ -8,7 +8,7 @@
             var h = document.documentElement.clientHeight;
             var m = document.getElementById('map-container');
             if (m && h) {
-                m.setAttribute('style', 'height: ' + (h*0.9) + 'px');
+                m.style.height = '' + (h*0.9) + 'px';
             }
         }
 

@@ -287,12 +287,12 @@ div#disclaimer {
 }
 
 div#disclaimer div#corner {
-    height: 1em;
-    width: 0.5em;
+    /* height: 1em; */
+    /* width: 0.5em; */
     border-left: 0.5em solid gold;
     border-top: 0.5em solid transparent;
     border-bottom: 0.5em solid transparent;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     position: relative; /* makes z-index applicable to this */
 }
 

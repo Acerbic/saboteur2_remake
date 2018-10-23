@@ -13,6 +13,4 @@
 
 ☐ Different pixel sizes for images on Press page -- some other way to display this page on small devices??
 
-☐ add robots.txt
-
-☐ add "modernizr" to use with versions prior to IE9.
+✔ add "modernizr" to use with versions prior to IE9. @done (10/23/2018, 10:33:41 PM)

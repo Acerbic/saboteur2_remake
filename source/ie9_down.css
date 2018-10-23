@@ -37,7 +37,7 @@ div#disclaimer-message {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)";
 }
 
-body.subpage img.left {
+.ie8down body.subpage img.left {
     width: 50%;
 }
 
@@ -46,7 +46,45 @@ body.subpage img.left {
     margin: 0;
 }
 
-ul#navigation { 
-    /* word-wrap: break-word; */
+html.ie7down.subpage {
+    overflow: hidden;
 }
-/* ul#navigation li {display: inline;} */
+
+.ie7down h1, .ie7down h2, .ie7down h3 {
+    font-weight: normal;
+}
+
+.ie7down ul#navigation li {display: inline;}
+
+.ie6down div#disclaimer {
+    position: relative;
+    font-size: 5em;
+    height: auto;
+
+    text-align: left;
+    width: 100%;
+}
+
+.ie6down div#disclaimer div#corner {
+    border-top: 0.5em solid rgb(36, 112, 141);
+    border-bottom: 0.5em solid rgb(36, 112, 141);
+    position: absolute; /* makes z-index applicable to this */
+    top: 0.1em;
+    line-height: 0;
+}
+
+.ie6down div#disclaimer div#anchor {
+    /* putting this over #corner */
+    position: absolute;
+    top: 0.2em;
+}
+
+.ie6down div#disclaimer div#popup {
+    visibility: visible;
+}
+.ie6down header a#header-logo img {
+    width: 640px;
+}
+.ie6down body.subpage img {
+    height: inherit;
+}
