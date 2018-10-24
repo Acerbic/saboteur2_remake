@@ -1,16 +1,9 @@
 ☐ Test modern version in different browsers
     ☐ Fix inconsistensies between target browsers
-    ✔ Logo image in header - causes scroll bars on smaller screen widths (background-url? scaling?) @done (10/17/2018, 12:18:05 PM)
     ☐ Is disclaimer accessible to blind ppl?
 
-✔ Fix CSS processing to inline @imports @done (10/21/2018, 6:20:48 PM)
-✔ On deployment to now, make sure cache-control max-age is served as well @done (10/21/2018, 10:59:35 AM)
 ☐ @media queries
-    ✔ disclaimer size - avoid blocking all space @done (10/19/2018, 1:16:49 PM)
-    ✔ menu items  -  switch spacing to min-width to force columns @done (10/19/2018, 1:16:51 PM)
-    ✔ saboteur2_weapon - set fixed width of weapon items - 25%, 33% to make neat columns @done (10/19/2018, 1:16:55 PM)
     ☐ article#article-secrets li - make menu look sensible
 
 ☐ Different pixel sizes for images on Press page -- some other way to display this page on small devices??
-
-✔ add "modernizr" to use with versions prior to IE9. @done (10/23/2018, 10:33:41 PM)
+☐ Header logo image - use background image instead, to provide consistent user experience
