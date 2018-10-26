@@ -1,11 +1,13 @@
 ul#navigation li {display: inline-block;}
 
 /* undo the shit magix */
-header a#header-logo {
+div#header-logo {
     position: static;
 }
-header a#header-logo img {
+div#header-logo a {
     margin-left: 0;
+}
+div#header-logo img {
     min-width: unset;
 }
 
@@ -24,7 +26,7 @@ div#disclaimer-message {
     width: 95%;
 }
 
-.ie8 header a#header-logo img {
+.ie8 div#header-logo img {
     max-height: 125px;
     min-height: 78px;
 }
@@ -82,7 +84,7 @@ html.ie7down.subpage {
 .ie6down div#disclaimer div#popup {
     visibility: visible;
 }
-.ie6down header a#header-logo img {
+.ie6down div#header-logo img {
     width: 640px;
 }
 .ie6down body.subpage img {

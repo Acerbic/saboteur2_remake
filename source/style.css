@@ -16,23 +16,23 @@ header {
     overflow: hidden;
 }
 
-a#header-logo {
-    display: block;
+div#header-logo {
+    padding-bottom: 0.833em;
     position: relative;
     left: 50%;
 }
-
-a#header-logo img {
-    padding-bottom: 0.833em;
-
-    /* this results in parent's width, but clamped between 400 and 640 */
-    width: 100%;
-    max-width: 640px;
-    min-width: 400px; /* overflow starts below this */
-
+div#header-logo a {
     /* center the overflow, since the 100% is in reference to actual
     width - i.e. after clamping by min-width and max-width */
     margin-left: -100%;
+}
+
+div#header-logo img {
+    /* this results in parent's width, but clamped between 400 and 640 */
+    width: 100%;
+    /* display:block; */
+    max-width: 640px;
+    min-width: 400px; /* overflow starts below this */
 }
 
 ul#navigation {

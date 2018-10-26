@@ -3,13 +3,15 @@
 {# detect the output file of the context - bit hackish #}
 
 <header>
-    <a href="index.html" id="header-logo">
-        <img 
-            src="images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125" 
-            srcset="images/320x_banner.png 320w, images/480x_banner.png 480w, images/banner.png 640w"
-            sizes="(max-width: 320px) 320px, (max-width: 480px) 464px, 600px"
-        />
-    </a>
+    <div id="header-logo">
+        <a href="index.html">
+            <img 
+                src="images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125" 
+                srcset="images/320x_banner.png 320w, images/480x_banner.png 480w, images/banner.png 640w"
+                sizes="(max-width: 320px) 320px, (max-width: 480px) 464px, 600px"
+            /> 
+        </a>
+    </div>
     <nav>
         <ul id="navigation">
             {% for page in top_pages %}
