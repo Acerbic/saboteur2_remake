@@ -11,46 +11,6 @@
     "_now_oss": "npm run build && rm ./public/audio/sab2_endika.mp3 && echo Build finished. Ready to deploy...",
     "deploy": "npm run _now_oss && now | xargs -I % cross-env-shell now alias % $npm_package_now_alias"
   },
-  "now": {
-    "alias": "saboteur2ru-remake.now.sh",
-    "public": true,
-    "type": "static",
-    "static": {
-      "public": "public",
-      "headers": [
-        {
-          "source": "**/*.@(jpg|jpeg|gif|png|mp3|ogg)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "max-age=86400"
-            }
-          ]
-        },
-        {
-          "source": "**/*.@(html|css)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "max-age=7200"
-            }
-          ]
-        },
-        {
-          "source": "404.html",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "max-age=300"
-            }
-          ]
-        }
-      ]
-    },
-    "files": [
-      "./public"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/GlebVarenov/saboteur2_remake.git"
