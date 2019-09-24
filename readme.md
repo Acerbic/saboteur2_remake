@@ -1,4 +1,4 @@
-# Saboteur2 website remake #
+# Saboteur2 website remake
 
 "Saboteur 2" was an old game released in 1987. Long after the game's time, a fan
 (sabotwo@gmail.com) made a website dedicated to it -
@@ -11,7 +11,7 @@ a child.
 
 See the project [live at Zeit Now](https://saboteur2ru-remake.now.sh)!
 
-## Notes on finished project ##
+## Notes on finished project
 
 You can read [workplan.md](./workplan.md) to get an estimation of what was in
 plans to do, before the actual project coding took place. I'd say 95% of that
